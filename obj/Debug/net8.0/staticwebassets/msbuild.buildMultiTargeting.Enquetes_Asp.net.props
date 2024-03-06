@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Enquetes_Asp.net.props" />
+</Project>

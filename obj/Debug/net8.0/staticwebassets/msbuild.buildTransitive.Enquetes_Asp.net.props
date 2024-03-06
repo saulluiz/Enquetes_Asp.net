@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Enquetes_Asp.net.props" />
+</Project>

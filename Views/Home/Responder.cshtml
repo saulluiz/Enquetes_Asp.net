@@ -1,0 +1,41 @@
+@model Enquetes_Asp.net.Models.Resposta
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <title>EnqueteWeb</title>
+</head>
+
+<body>
+    <h1>EnqueteWeb!</h1>
+    <h2> Quer tomar sorvete?</h2>
+    <h4>Preencha os campos e marque sua Resposta.</h4>
+    <div asp-validation-summary="All"> </div>
+    <form method="POST">
+        <div>
+            <label asp-for="Nome">Seu Nome:</label>
+            <input asp-for="Nome">
+        </div>
+        <div>
+            <label asp-for="Email">Seu Email:</label>
+            <input asp-for="Email">
+        </div>
+        <div>
+            <input type="radio" id="rdSim" asp-for="Sim" value="true">
+            <label for="rdSim">Sim</label>
+        </div>
+        <div>
+            <input type="radio" id="rdNao" asp-for="Sim" value="false">
+            <label for="rdNao">Não</label>
+        </div>
+        <input type="submit" value="Enviar Resposta">
+    </form>
+
+</body>
+
+</html>
